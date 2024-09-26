@@ -1,0 +1,5 @@
+module clk_gen( Up, Down, clk);
+	input Up, Down;
+	output clk;
+	assign clk= ~Up | ~Down;
+endmodule
